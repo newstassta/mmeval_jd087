@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "newstassta-mmeval_jd087"
+version = "0.1.0"
+description = "按给定权重把总额度分配到各项，报告超分配项与利用率"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "newstassta" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://newstassta.github.io"
+Repository = "https://github.com/newstassta/mmeval_jd087"
+Issues = "https://github.com/newstassta/mmeval_jd087/issues"
+
+[project.scripts]
+mmeval_jd087 = "mmeval_jd087:main"
+
+[tool.setuptools]
+py-modules = ["mmeval_jd087"]
